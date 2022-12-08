@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/argon-design-system-react.git"
+    "url": "git+https://github.com/faithbaptistwh/NSD2.git"
   },
   "keywords": [
     "react",
@@ -25,10 +25,12 @@
   "author": "Brandon DeVore",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/argon-design-system-react/issues"
+    "url": "https://github.com/faithbaptistwh/NSD2/issues"
   },
-  "homepage": "https://demos.creative-tim.com/argon-design-system-react/",
+  "homepage": "https://faithbaptistwh.github.io/NSD2/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && gulp licenses",
     "test": "react-scripts test",
