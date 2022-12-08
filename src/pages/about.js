@@ -1,5 +1,12 @@
 import React from 'react'
-import { Button, Card, Container, Row, Col } from 'reactstrap'
+import {
+  Button,
+  Card,
+  Container,
+  Row,
+  Col,
+  UncontrolledTooltip,
+} from 'reactstrap'
 import MainNavbar from 'components/Navbars/Navbar'
 import MainFooter from 'components/Footers/footer'
 
@@ -65,13 +72,22 @@ class About extends React.Component {
                       <div className='card-profile-actions py-4 mt-lg-0 '>
                         <Button
                           className='mr-4'
-                          color='info'
+                          color='default'
+                          data-placement='bottom'
+                          id='tooltip123456'
                           href='#'
                           onClick={(e) => e.preventDefault()}
                           size='sm'
                         >
                           Email
                         </Button>
+                        <UncontrolledTooltip
+                          delay={0}
+                          target='tooltip123456'
+                          placement='bottom'
+                        >
+                          Email me
+                        </UncontrolledTooltip>
                       </div>
                       <div></div>
                     </Col>
