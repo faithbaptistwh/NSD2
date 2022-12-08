@@ -26,8 +26,8 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0'
 import Index from 'pages/index.js'
 import Landing from 'views/examples/Landing.js'
 import Login from 'views/examples/Login.js'
-import Profile from 'views/examples/Profile.js'
 import Register from 'views/examples/Register.js'
+import About from 'pages/about'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -45,11 +45,7 @@ root.render(
         exact
         render={(props) => <Login {...props} />}
       />
-      <Route
-        path='/profile-page'
-        exact
-        render={(props) => <Profile {...props} />}
-      />
+      <Route path='/about' exact render={(props) => <About {...props} />} />
       <Route
         path='/register-page'
         exact

@@ -157,10 +157,10 @@ class MainNavbar extends React.Component {
                       <span className='nav-link-inner--text'>About</span>
                     </DropdownToggle>
                     <DropdownMenu>
-                      <DropdownItem to='/landing-page' tag={Link}>
+                      <DropdownItem to='/About' tag={Link}>
                         About
                       </DropdownItem>
-                      <DropdownItem to='/profile-page' tag={Link}>
+                      <DropdownItem to='/#' tag={Link}>
                         Contact
                       </DropdownItem>
                     </DropdownMenu>
