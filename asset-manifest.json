@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NSD2/static/css/main.92c6961b.css",
-    "main.js": "/NSD2/static/js/main.083e08e1.js",
+    "main.js": "/NSD2/static/js/main.bb5a3d63.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/NSD2/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/team-2-800x800.jpg": "/NSD2/static/media/team-2-800x800.3e08ef145920c93bbe32.jpg",
     "static/media/img-1-1200x1000.jpg": "/NSD2/static/media/img-1-1200x1000.df1442cf520034feb3b0.jpg",
@@ -9,6 +9,7 @@
     "static/media/team-1-800x800.jpg": "/NSD2/static/media/team-1-800x800.fa5a7ac2c81a43925586.jpg",
     "static/media/fontawesome-webfont.eot": "/NSD2/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/NSD2/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/avatar.jpg": "/NSD2/static/media/avatar.e87b9817cd25b4ec1926.jpg",
     "static/media/landing.jpg": "/NSD2/static/media/landing.530e5e3e621fe49e8e46.jpg",
     "static/media/nucleo-icons.svg": "/NSD2/static/media/nucleo-icons.01ebecaf50461162d4bc.svg",
     "static/media/team-4-800x800.jpg": "/NSD2/static/media/team-4-800x800.99c612eb60728a5aeeb0.jpg",
@@ -30,6 +31,6 @@
   },
   "entrypoints": [
     "static/css/main.92c6961b.css",
-    "static/js/main.083e08e1.js"
+    "static/js/main.bb5a3d63.js"
   ]
 }
