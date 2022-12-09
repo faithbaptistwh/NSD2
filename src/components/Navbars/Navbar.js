@@ -162,7 +162,7 @@ class MainNavbar extends React.Component {
                       <DropdownItem to='/about' tag={Link}>
                         About
                       </DropdownItem>
-                      <DropdownItem to='/#' tag={Link}>
+                      <DropdownItem to='/next-step-discipleship' tag={Link}>
                         Contact
                       </DropdownItem>
                     </DropdownMenu>
