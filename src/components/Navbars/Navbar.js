@@ -1,4 +1,4 @@
-import React, { useEffect, useState, onExiting, onExited } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Headroom from 'headroom.js'
 import {
@@ -28,13 +28,6 @@ export default function MainNavbar() {
     headroom.init()
   }, [])
 
-  onExiting = () => {
-    setCollapseClass('collapsing-out')
-  }
-
-  onExited = () => {
-    setCollapseClass('')
-  }
   return (
     <>
       <header className='header-global'>
@@ -54,8 +47,6 @@ export default function MainNavbar() {
               toggler='#navbar_global'
               navbar
               className={collapseClass}
-              onExiting={onExiting}
-              onExited={onExited}
             >
               <div className='navbar-collapse-header'>
                 <Row>
