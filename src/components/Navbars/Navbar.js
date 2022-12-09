@@ -94,7 +94,6 @@ class MainNavbar extends React.Component {
                         <Media
                           className='d-flex align-items-center'
                           to='/next-step-discipleship'
-                          target='_blank'
                           tag={Link}
                         >
                           <div className='icon icon-shape bg-gradient-primary rounded-circle text-white'>
@@ -162,7 +161,7 @@ class MainNavbar extends React.Component {
                       <DropdownItem to='/about' tag={Link}>
                         About
                       </DropdownItem>
-                      <DropdownItem to='/next-step-discipleship' tag={Link}>
+                      <DropdownItem to='/' tag={Link}>
                         Contact
                       </DropdownItem>
                     </DropdownMenu>
