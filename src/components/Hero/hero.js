@@ -42,8 +42,9 @@ class MainHero extends React.Component {
                       <Button
                         className='btn-white btn-icon mb-3 mb-sm-0'
                         color='default'
-                        href='/next-step-dicsipleship'
+                        href='/nextstep'
                         size='lg'
+                        tag={Link}
                       >
                         <span className='btn-inner--icon mr-1'>
                           <i className='ni ni-books' />
