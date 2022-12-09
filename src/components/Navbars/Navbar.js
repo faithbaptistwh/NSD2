@@ -93,7 +93,7 @@ class MainNavbar extends React.Component {
                       <div className='dropdown-menu-inner'>
                         <Media
                           className='d-flex align-items-center'
-                          href='#'
+                          href='/next-step-discipleship'
                           target='_blank'
                         >
                           <div className='icon icon-shape bg-gradient-primary rounded-circle text-white'>

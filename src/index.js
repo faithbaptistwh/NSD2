@@ -24,10 +24,9 @@ import 'assets/vendor/font-awesome/css/font-awesome.min.css'
 import 'assets/scss/argon-design-system-react.scss?v1.1.0'
 
 import Index from 'pages/index.js'
-import Landing from 'views/examples/Landing.js'
-import Login from 'views/examples/Login.js'
 import Register from 'views/examples/Register.js'
 import About from 'pages/about'
+import NSD from 'pages/nsd'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -36,14 +35,9 @@ root.render(
     <Switch>
       <Route path='/' exact render={(props) => <Index {...props} />} />
       <Route
-        path='/landing-page'
+        path='/next-step-discipleship'
         exact
-        render={(props) => <Landing {...props} />}
-      />
-      <Route
-        path='/login-page'
-        exact
-        render={(props) => <Login {...props} />}
+        render={(props) => <NSD {...props} />}
       />
       <Route path='/about' exact render={(props) => <About {...props} />} />
       <Route
