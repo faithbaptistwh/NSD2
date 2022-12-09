@@ -24,7 +24,6 @@ import 'assets/vendor/font-awesome/css/font-awesome.min.css'
 import 'assets/scss/argon-design-system-react.scss?v1.1.0'
 
 import Index from 'pages/index.js'
-import Register from 'views/examples/Register.js'
 import About from 'pages/about'
 import NSD from 'pages/nsd'
 
@@ -40,11 +39,6 @@ root.render(
         render={(props) => <NSD {...props} />}
       />
       <Route path='/about' exact render={(props) => <About {...props} />} />
-      <Route
-        path='/register-page'
-        exact
-        render={(props) => <Register {...props} />}
-      />
       <Redirect to='/' />
     </Switch>
   </BrowserRouter>
