@@ -113,7 +113,6 @@ class MainNavbar extends React.Component {
                         <Media
                           className='d-flex align-items-center'
                           href='/#'
-                          target='_blank'
                           tag={Link}
                         >
                           <div className='icon icon-shape bg-gradient-success rounded-circle text-white'>
@@ -130,11 +129,7 @@ class MainNavbar extends React.Component {
                             </p>
                           </Media>
                         </Media>
-                        <Media
-                          className='d-flex align-items-center'
-                          href='/#'
-                          target='_blank'
-                        >
+                        <Media className='d-flex align-items-center' href='/#'>
                           <div className='icon icon-shape bg-gradient-warning rounded-circle text-white'>
                             <i className='ni ni-books' />
                           </div>
