@@ -93,7 +93,7 @@ class MainNavbar extends React.Component {
                       <div className='dropdown-menu-inner'>
                         <Media
                           className='d-flex align-items-center'
-                          href='/nextstep'
+                          to='/next-step-discipleship'
                           target='_blank'
                           tag={Link}
                         >

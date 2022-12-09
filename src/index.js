@@ -34,7 +34,7 @@ root.render(
     <Switch>
       <Route path='/' exact render={(props) => <Index {...props} />} />
       <Route
-        path='/nextstep'
+        path='/next-step-discipleship'
         exact
         render={(props) => <NextStep {...props} />}
       />
