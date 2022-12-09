@@ -33,11 +33,7 @@ root.render(
   <BrowserRouter>
     <Switch>
       <Route path='/' exact render={(props) => <Index {...props} />} />
-      <Route
-        path='/next-step-discipleship'
-        exact
-        render={(props) => <NSD {...props} />}
-      />
+      <Route path='/nsd' exact render={(props) => <NSD {...props} />} />
       <Route path='/about' exact render={(props) => <About {...props} />} />
       <Redirect to='/' />
     </Switch>
