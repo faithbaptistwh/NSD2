@@ -44,7 +44,6 @@ class MainHero extends React.Component {
                         color='default'
                         href='/nextstep'
                         size='lg'
-                        tag={Link}
                       >
                         <span className='btn-inner--icon mr-1'>
                           <i className='ni ni-books' />
