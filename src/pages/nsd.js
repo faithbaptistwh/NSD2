@@ -3,7 +3,7 @@ import { Button, Card, CardBody, Container, Row, Col } from 'reactstrap'
 import MainNavbar from 'components/Navbars/Navbar'
 import MainFooter from 'components/Footers/footer'
 
-class NSD extends React.Component {
+class NextStep extends React.Component {
   state = {}
   componentDidMount() {
     document.documentElement.scrollTop = 0
@@ -217,4 +217,4 @@ class NSD extends React.Component {
   }
 }
 
-export default NSD
+export default NextStep
