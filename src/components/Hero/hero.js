@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Button, Container, Row, Col } from 'reactstrap'
 
 class MainHero extends React.Component {
@@ -44,6 +45,7 @@ class MainHero extends React.Component {
                         color='default'
                         to='/next-step-discipleship'
                         size='lg'
+                        tag={Link}
                       >
                         <span className='btn-inner--icon mr-1'>
                           <i className='ni ni-books' />
