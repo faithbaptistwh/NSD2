@@ -114,6 +114,7 @@ class MainNavbar extends React.Component {
                           className='d-flex align-items-center'
                           href='#'
                           target='_blank'
+                          tag={Link}
                         >
                           <div className='icon icon-shape bg-gradient-success rounded-circle text-white'>
                             <i className='ni ni-calendar-grid-58' />
@@ -157,7 +158,7 @@ class MainNavbar extends React.Component {
                       <span className='nav-link-inner--text'>About</span>
                     </DropdownToggle>
                     <DropdownMenu>
-                      <DropdownItem to='/About' tag={Link}>
+                      <DropdownItem to='/about' tag={Link}>
                         About
                       </DropdownItem>
                       <DropdownItem to='/#' tag={Link}>
