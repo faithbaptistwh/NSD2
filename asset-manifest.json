@@ -1,23 +1,14 @@
 {
   "files": {
     "main.css": "/NSD2/static/css/main.92c6961b.css",
-    "main.js": "/NSD2/static/js/main.bb5a3d63.js",
+    "main.js": "/NSD2/static/js/main.1ffd7670.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/NSD2/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
-    "static/media/team-2-800x800.jpg": "/NSD2/static/media/team-2-800x800.3e08ef145920c93bbe32.jpg",
-    "static/media/img-1-1200x1000.jpg": "/NSD2/static/media/img-1-1200x1000.df1442cf520034feb3b0.jpg",
-    "static/media/team-3-800x800.jpg": "/NSD2/static/media/team-3-800x800.70911cddbb86ea83b652.jpg",
-    "static/media/team-1-800x800.jpg": "/NSD2/static/media/team-1-800x800.fa5a7ac2c81a43925586.jpg",
     "static/media/fontawesome-webfont.eot": "/NSD2/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/NSD2/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/avatar.jpg": "/NSD2/static/media/avatar.e87b9817cd25b4ec1926.jpg",
-    "static/media/landing.jpg": "/NSD2/static/media/landing.530e5e3e621fe49e8e46.jpg",
     "static/media/nucleo-icons.svg": "/NSD2/static/media/nucleo-icons.01ebecaf50461162d4bc.svg",
-    "static/media/team-4-800x800.jpg": "/NSD2/static/media/team-4-800x800.99c612eb60728a5aeeb0.jpg",
-    "static/media/profile.jpg": "/NSD2/static/media/profile.991e6d2c8d229cc026b3.jpg",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/NSD2/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/ill-2.svg": "/NSD2/static/media/ill-2.b82bc41ca8f27286779053cc2a544e93.svg",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/NSD2/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
-    "static/media/promo-1.png": "/NSD2/static/media/promo-1.f39d32d244fa5beabbaf.png",
     "static/media/argon-react.png": "/NSD2/static/media/argon-react.128d71d316a8e92aff4a.png",
     "static/media/argon-react-white.png": "/NSD2/static/media/argon-react-white.e4dd3b41697ada43fdcb.png",
     "static/media/nucleo-icons.eot": "/NSD2/static/media/nucleo-icons.19abb5402a664606b14c.eot",
@@ -31,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.92c6961b.css",
-    "static/js/main.bb5a3d63.js"
+    "static/js/main.1ffd7670.js"
   ]
 }
