@@ -3,8 +3,7 @@ import { Container, Row, Col } from 'reactstrap'
 import MainNavbar from 'components/Navbars/Navbar'
 import MainFooter from 'components/Footers/footer'
 import LessonCard from 'components/Card/card'
-import axios from 'axios'
-import useContentful from 'components/CustomHooks/useContentful'
+import TestHook from 'components/CustomHooks/testHook'
 
 var config = {
   method: 'get',
@@ -16,16 +15,17 @@ var config = {
 
 export default function NextStep() {
   const refMain = useRef()
-  const [card, setCard] = useState([])
-  const { getCards } = useContentful()
+  const { data } = TestHook()
 
   useEffect(() => {
     document.documentElement.scrollTop = 0
     document.scrollingElement.scrollTop = 0
     refMain.scrollTop = 0
-
-    getCards().then((response) => setCard(response))
   }, [])
+
+  if (!data) {
+    return <span>Loading...</span>
+  }
 
   return (
     <>
@@ -85,11 +85,12 @@ export default function NextStep() {
             <Row className='justify-content-center'>
               <Col lg='12'>
                 <Row className='row-grid'>
-                  {card.map(({ id, description, lessonNumber }) => (
+                  <p></p>
+                  {data.map(({ description, lessonNumber, audio }) => (
                     <LessonCard
-                      key={id}
                       description={description}
                       lessonNumber={lessonNumber}
+                      audio={audio}
                     />
                   ))}
                 </Row>
