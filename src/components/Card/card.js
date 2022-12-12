@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import { Button, Card, CardBody, Col } from 'reactstrap'
+import React from 'react'
+import { Card, CardBody, Col } from 'reactstrap'
 import AudioPlayer, { RHAP_UI } from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
 
 export default function LessonCard(props) {
-  const [isPlaying, setIsPlaying] = useState(false)
   const { description, lessonNumber, audio } = props
-
-  const lessonAudio = new Audio(audio ? audio.url : '/')
-
-  const play = () => {
-    lessonAudio.play()
-    setIsPlaying(true)
-  }
-  const pause = () => {
-    lessonAudio.pause()
-    setIsPlaying(false)
-  }
 
   return (
     <Col lg='4'>

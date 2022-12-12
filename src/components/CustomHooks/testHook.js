@@ -20,9 +20,9 @@ var data = JSON.stringify({
 
 var config = {
   method: 'post',
-  url: 'https://graphql.contentful.com/content/v1/spaces/rsocu0hl5psn',
+  url: `https://graphql.contentful.com/content/v1/spaces/${REACT_APP_SPACE_ID}`,
   headers: {
-    Authorization: 'Bearer ObQeZf6Vv0sfN1m-WitpOTEk9jU8n5zmS-JOym1LVik',
+    Authorization: `Bearer ${REACT_APP_CDA_TOKEN}`,
     'Content-Type': 'application/json',
   },
   data: data,
