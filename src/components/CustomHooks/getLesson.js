@@ -44,6 +44,7 @@ export default function GetLesson() {
     await axios(config)
       .then(function (response) {
         setData(response.data.data.lesson)
+        console.log(response.data.data.lesson)
       })
       .catch(function (error) {
         console.log(error)
