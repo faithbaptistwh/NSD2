@@ -12,6 +12,7 @@ import MainFooter from 'components/Footers/footer'
 import GetLesson from 'components/CustomHooks/getLesson'
 import AudioPlayer from 'react-h5-audio-player'
 import 'react-h5-audio-player/lib/styles.css'
+import { Link } from 'react-router-dom'
 
 export default function Lesson() {
   const refMain = useRef()
@@ -40,7 +41,11 @@ export default function Lesson() {
                 <Row>
                   <Pagination>
                     <PaginationItem>
-                      <PaginationLink previous href='/next-step-discipleship' />
+                      <PaginationLink
+                        previous
+                        tag={Link}
+                        to='/next-step-discipleship'
+                      />
                     </PaginationItem>
                   </Pagination>
                 </Row>
