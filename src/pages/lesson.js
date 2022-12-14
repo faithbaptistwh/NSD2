@@ -1,13 +1,21 @@
 import React, { useEffect, useRef } from 'react'
-import { Container, Row, Col } from 'reactstrap'
+import {
+  Container,
+  Row,
+  Col,
+  Pagination,
+  PaginationItem,
+  PaginationLink,
+} from 'reactstrap'
 import MainNavbar from 'components/Navbars/Navbar'
 import MainFooter from 'components/Footers/footer'
-import LessonCard from 'components/Card/card'
-import GetLessons from 'components/CustomHooks/useContentful'
+import GetLesson from 'components/CustomHooks/getLesson'
+import AudioPlayer from 'react-h5-audio-player'
+import 'react-h5-audio-player/lib/styles.css'
 
-export default function NextStep() {
+export default function Lesson() {
   const refMain = useRef()
-  const { data } = GetLessons()
+  const { data } = GetLesson()
 
   useEffect(() => {
     document.documentElement.scrollTop = 0
@@ -30,16 +38,28 @@ export default function NextStep() {
             <Container className='py-lg-md d-flex'>
               <div className='col px-0'>
                 <Row>
-                  <Col lg='6'>
+                  <Pagination>
+                    <PaginationItem>
+                      <PaginationLink previous href='/next-step-discipleship' />
+                    </PaginationItem>
+                  </Pagination>
+                </Row>
+                <Row>
+                  <Col>
                     <h1 className='display-3 text-white'>
-                      Next Step Discipleship <span>Lorem Ipsum</span>
+                      {data.shortTitle} <span>{data.shortDescription}</span>
                     </h1>
-                    <p className='lead text-white'>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Enim ut sem viverra aliquet eget sit amet tellus.
-                    </p>
+                    <p className='lead text-white'></p>
                   </Col>
+                </Row>
+                <Row className='display-2'>
+                  {data.audio ? (
+                    <AudioPlayer
+                      customAdditionalControls={[]}
+                      customVolumeControls={[]}
+                      src={data.audio.url}
+                    />
+                  ) : null}
                 </Row>
               </div>
             </Container>
@@ -68,23 +88,6 @@ export default function NextStep() {
               <Col lg='12'>
                 <Row className='row-grid'>
                   <p></p>
-                  {data.map(
-                    ({
-                      shortDescription,
-                      lessonNumber,
-                      audio,
-                      shortTitle,
-                      sys,
-                    }) => (
-                      <LessonCard
-                        shortTitle={shortTitle}
-                        description={shortDescription}
-                        lessonNumber={lessonNumber}
-                        audio={audio}
-                        sys={sys}
-                      />
-                    )
-                  )}
                 </Row>
               </Col>
             </Row>

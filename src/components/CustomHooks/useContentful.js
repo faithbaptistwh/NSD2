@@ -1,30 +1,56 @@
-import { createClient } from 'contentful'
+import axios from 'axios'
+import { useState, useEffect } from 'react'
 
-const useContentful = () => {
-  const client = createClient({
-    space: 'rsocu0hl5psn',
-    accessToken: 'ObQeZf6Vv0sfN1m-WitpOTEk9jU8n5zmS-JOym1LVik',
-  })
+const { REACT_APP_SPACE_ID, REACT_APP_CDA_TOKEN } = process.env
 
-  const getCards = async () => {
-    try {
-      const entries = await client.getEntries({
-        content_type: 'lessonCard',
-        select: 'fields',
-        order: 'fields.lessonNumber',
-      })
-      const sanitizeEntries = entries.items.map((item) => {
-        return {
-          ...item.fields,
+var data = JSON.stringify({
+  query: `{
+    lessonCollection(order: lessonNumber_ASC) {
+      items {
+        sys{
+          id
         }
-      })
-      return sanitizeEntries
-    } catch (error) {
-      console.log(`Error getting Lesson Card: ${error}`)
+        lessonNumber
+        shortTitle
+        shortDescription
+        content{
+          json
+        }
+        audio {
+          url
+        }
+      }
     }
-  }
+  }`,
+  variables: {},
+})
 
-  return { getCards }
+var config = {
+  method: 'post',
+  url: `https://graphql.contentful.com/content/v1/spaces/${REACT_APP_SPACE_ID}`,
+  headers: {
+    Authorization: `Bearer ${REACT_APP_CDA_TOKEN}`,
+    'Content-Type': 'application/json',
+  },
+  data: data,
 }
 
-export default useContentful
+export default function GetLessons() {
+  let [data, setData] = useState()
+
+  useEffect(() => {
+    getContent()
+  }, [])
+
+  const getContent = async () => {
+    await axios(config)
+      .then(function (response) {
+        setData(response.data.data.lessonCollection.items)
+        console.log(response.data.data.lessonCollection.items)
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+  }
+  return { data }
+}

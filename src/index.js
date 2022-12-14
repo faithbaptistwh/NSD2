@@ -26,6 +26,7 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0'
 import Index from 'pages/index.js'
 import About from 'pages/about'
 import NextStep from 'pages/nsd'
+import Lesson from 'pages/lesson'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -39,6 +40,11 @@ root.render(
         render={(props) => <NextStep {...props} />}
       />
       <Route path='/about' exact render={(props) => <About {...props} />} />
+      <Route
+        path='/next-step-discipleship/:lessonId'
+        exact
+        render={(props) => <Lesson {...props} />}
+      />
       <Redirect to='/' />
     </Switch>
   </BrowserRouter>
