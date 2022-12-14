@@ -107,7 +107,6 @@ export default function Lesson() {
                     RICHTEXT_OPTIONS
                   )}
                 </Row>
-                <Row></Row>
               </Col>
             </Row>
           </Container>
